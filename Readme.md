@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergei Pomoshnikov](https://up.htmlacademy.ru/adaptive/12/user/455635).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Милитенко](https://htmlacademy.ru/profile/id227898).
 
 ---
 
