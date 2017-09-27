@@ -7,9 +7,7 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <svg></svg>
-        </div>
+        <img src="#" alt="main-logo" width="#" height="#" class="main-nav__logo">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -26,82 +24,83 @@
           </li>
         </ul>
       </nav>
-      <p class="page-header__slogan">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </p>
     </header>
     <main class="page-main">
+      <h1 class="page-main__title">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </h1>
       <p class="page-main__description">
         Поделитесь своей историей и получите шанс выиграть ценный приз-
         1000 миль на вашу бонусную карту!
       </p>
-      <form class="page-main__form form">
-        <fieldset class="form__user">
-          <label for="surname" class="form__item-name">Фамилия:</label>
+      <form class="page-main__form form" action="http://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__fieldset form-user">
+          <label for="surname" class="form__label">Фамилия:</label>
           <input type="text" name="surname" id="surname" class="form__item"
             placeholder="Укажите фамилию" required>
-          <label for="name" class="form__item-name">Имя:</label>
+          <label for="name" class="form__label">Имя:</label>
           <input type="text" name="name" id="name" class="form__item"
             placeholder="Введите ваше имя" required>
-          <label for="patronymic" class="form__item-name">Отчество:</label>
+          <label for="patronymic" class="form__label">Отчество:</label>
           <input type="text" name="patronymic" id="patronymic" class="form__item"
             placeholder="Ну и отчество тоже">
         </fieldset>
-        <fieldset class="form__progress">
-          <input type="checkbox" name="selfie" id="selfie" class="form__checkbox" checked>
-          <label for="selfie" class="form__progress__name">
+        <fieldset class="form__fieldset form-progress">
+          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <input type="checkbox" name="selfie" id="selfie" class="form-progress__checkbox" checked>
+          <label for="selfie" class="form__label form-progress__label">
             Сделал селфи с акулой
           </label>
-          <input type="checkbox" name="burnt" id="burnt" class="form__checkbox" checked>
-          <label for="burnt" class="form__progress__name">
+          <input type="checkbox" name="burnt" id="burnt" class="form-progress__checkbox" checked>
+          <label for="burnt" class="form__label form-progress__label">
             Обгорел на пляже
           </label>
-          <input type="checkbox" name="Chuck-Norris" id="Chuck-Norris" class="form__checkbox">
-          <label for="Chuck-Norris" class="form__progress__name">
+          <input type="checkbox" name="Chuck-Norris" id="Chuck-Norris" class="form-progress__checkbox">
+          <label for="Chuck-Norris" class="form__label form-progress__label">
             Видел Чака Норриса
           </label>
-          <input type="checkbox" name="souvenirs" id="souvenirs" class="form__checkbox">
-          <label for="souvenirs" class="form__progress__name">
+          <input type="checkbox" name="souvenirs" id="souvenirs" class="form-progress__checkbox">
+          <label for="souvenirs" class="form__label form-progress__label">
             Накупил сувениров
           </label>
-          <input type="checkbox" name="tower" id="tower" class="form__checkbox" checked>
-          <label for="tower" class="form__progress__name">
+          <input type="checkbox" name="tower" id="tower" class="form-progress__checkbox" checked>
+          <label for="tower" class="form__label form-progress__label">
             Удержал башню
           </label>
-          <input type="checkbox" name="smashing" id="smashing" class="form__checkbox">
-          <label for="smashing" class="form__progress__name">
+          <input type="checkbox" name="smashing" id="smashing" class="form-progress__checkbox">
+          <label for="smashing" class="form__label form-progress__label">
             Разгромил отель
           </label>
         </fieldset>
-        <fieldset class="form__contact">
-          <label for="phone" class="form__contact__name">
+        <fieldset class="form__fieldset form-contact">
+          <label for="phone" class="form__label">
             Номер телефона
           </label>
           <input type="tel" name="phone" id="phone" class="form__item"
             placeholder="Номер, пожалуйста">
-          <label for="phone" class="form__contact__name">
+          <label for="phone" class="form__label">
             Адрес почты
           </label>
           <input type="mail" name="mail" id="mail" class="form__item"
             placeholder="Введите почту" required>
         </fieldset>
-        <fieldset class="form__application">
-          <legend class="form__application__title">С каким приложением путешествовали?</legend>
-          <input type="radio" name="ios" id="ios" class="form__radio">
-          <label for="ios" class="form__application__name">
+        <fieldset class="form__fieldset form-application">
+          <legend class="form__legend">С каким приложением путешествовали?</legend>
+          <input type="radio" name="ios" id="ios" class="form-application__radio">
+          <label for="ios" class="form__label form-application__label">
             Pink для iOS
           </label>
-          <input type="radio" name="android" id="android" class="form__radio">
-          <label for="android" class="form__application__name">
+          <input type="radio" name="android" id="android" class="form-application__radio">
+          <label for="android" class="form__label form-application__label">
             Pink на Android
           </label>
-          <input type="radio" name="windows" id="windows" class="form__radio">
-          <label for="windows" class="form__application__name">
+          <input type="radio" name="windows" id="windows" class="form-application__radio">
+          <label for="windows" class="form__label form-application__label">
             Windows Phone
           </label>
         </fieldset>
-        <fieldset class="form__emotions">
-          <label for="emotions" class="form__emotions__name">
+        <fieldset class="form__fieldset form-emotions">
+          <legend class="form__legend">
             Опишите свои эмоции
           </label>
           <textarea name="emotions" id="emotions" class="form__textarea"
@@ -118,13 +117,17 @@
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
           <a href="#" class="social-list__link social-list__link--twitter">twitter</a>
+        </li>
+        <li class="social-list__item">
           <a href="#" class="social-list__link social-list__link--facebook">facebook</a>
+        </li>
+        <li class="social-list__item">
           <a href="#" class="social-list__link social-list__link--youtube">youtube</a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru" class="page-footer__developed developed">
-        <span class="developed__text">Разработано</span>
-        <svg class="developed__logo"></svg>
+      <a href="https://htmlacademy.ru" class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <svg class="copyright__logo"></svg>
       </a>
     </footer>
   </body>
